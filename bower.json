@@ -1,0 +1,25 @@
+{
+  "name": "notifications-js-pooling-consumer",
+  "version": "0.0.1",
+  "repository": "https://github.com/samfcmc/notifications-js-pooling-consumer",
+  "homepage": "https://github.com/samfcmc/notifications-js-pooling-consumer",
+  "authors": [
+    "Samuel Coelho <samuelfcmc@gmail.com>"
+  ],
+  "description": "A consumer for the notifications service that uses pooling",
+  "main": [
+    "dist/notifications.js"
+  ],
+  "keywords": [
+    "notifications"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "tmp",
+    "build"
+  ]
+}
