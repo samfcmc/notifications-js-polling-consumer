@@ -1,7 +1,7 @@
 {
   "name": "notifications-js-pooling-consumer",
   "description": "A consumer for the notifications service that uses pooling",
-  "version": "0.0.1",
+  "version": "alpha.1",
   "repository": "https://github.com/samfcmc/notifications-js-pooling-consumer",
   "license": "MIT",
   "devDependencies": {
