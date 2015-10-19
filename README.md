@@ -18,7 +18,7 @@ var notifications = new Notifications(token);
 ```
 Now you can start use several methods to handle notifications of a particular user
 
-* Get last N notifications, where N the limit of notifications you get.
+* Get last N notifications, where is N the limit of notifications you get.
 
 ```javascript
 notifications.getLastN(N, function(response) {
