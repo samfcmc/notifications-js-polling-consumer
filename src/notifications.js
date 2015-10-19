@@ -1,7 +1,6 @@
 (function(module) {
 
   module.exports = function(request) {
-    var baseUrl = '/api/notifications';
     var mostRecent = function(notifications) {
       var found = {timestamp: 0};
       for(var i = 0; i < notifications.length; i++) {
@@ -16,11 +15,12 @@
     /*
      * The Notifications Consumer API
     */
-    return function(token) {
+    return function(apiUrl, token) {
       return {
         token: token,
+        baseUrl: apiUrl + '/api/notifications',
         getLastN: function(n, success, error) {
-          var url = baseUrl + '/last/' + n;
+          var url = this.baseUrl + '/last/' + n;
           request.get(url, this.token, function(response) {
             if(response.length > 0) {
               this.last = mostRecent(response);
@@ -35,10 +35,10 @@
             usernames: usernames,
             payload: payload
           };
-          request.post(baseUrl, this.token, data, success, error);
+          request.post(this.baseUrl, this.token, data, success, error);
         },
         unread: function(success, error) {
-          var url = baseUrl + '/unread';
+          var url = this.baseUrl + '/unread';
           request.get(url, this.token, function(response) {
             if(response.length > 0) {
               this.last = mostRecent(response);
@@ -49,7 +49,7 @@
           }.bind(this), error);
         },
         after: function(id, success, error) {
-          var url = baseUrl + '/after/' + id;
+          var url = this.baseUrl + '/after/' + id;
           request.get(url, this.token, function(response) {
             if(response.length > 0) {
               this.last = mostRecent(response);
@@ -60,7 +60,7 @@
           }.bind(this), error);
         },
         read: function(id, success, error) {
-          var url = baseUrl + '/' + id + '/read'
+          var url = this.baseUrl + '/' + id + '/read'
           request.post(url, this.token, {}, success, error)
         },
         poll: function(seconds, success, error) {

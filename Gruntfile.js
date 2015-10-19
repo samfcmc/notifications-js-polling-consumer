@@ -1,13 +1,6 @@
 module.exports = function(grunt) {
 
   require('load-grunt-tasks')(grunt);
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-connect');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-browserify');
-  grunt.loadNpmTasks('grunt-config');
-  grunt.loadNpmTasks('grunt-bump');
 
   // Project configuration.
   grunt.initConfig({
@@ -17,7 +10,7 @@ module.exports = function(grunt) {
     distPath: 'dist',
     moduleName: 'notifications',
     moduleFile: '<%= moduleName %>.js',
-    moduleMinName: '<%= modumeName %>.min',
+    moduleMinName: '<%= moduleName %>.min',
     moduleMinFile: '<%= moduleMinName %>.js',
     mainName: 'index',
     mainFile: '<%= mainName %>.js',
