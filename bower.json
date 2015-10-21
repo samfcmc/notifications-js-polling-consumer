@@ -1,5 +1,5 @@
 {
-  "name": "notifications-js-pooling-consumer",
+  "name": "notifications-js-polling-consumer",
   "version": "alpha.1",
   "repository": "https://github.com/samfcmc/notifications-js-pooling-consumer",
   "homepage": "https://github.com/samfcmc/notifications-js-pooling-consumer",

@@ -1,5 +1,5 @@
-# notifications-js-pooling-consumer
-A consumer for the [notifications](https://github.com/samfcmc/bennu-notifications) service that uses pooling
+# notifications-js-polling-consumer
+A consumer for the [notifications](https://github.com/samfcmc/bennu-notifications) service that uses polling
 
 ## Requirements
 * Bower
@@ -7,7 +7,7 @@ A consumer for the [notifications](https://github.com/samfcmc/bennu-notification
 ## Installation
 If you are using Bower to manage all the frontend dependencies in your project you can use it to install this library:
 ```shell
-bower install notifications-js-pooling-consumer --save
+bower install notifications-js-polling-consumer --save
 ```
 
 ## Usage
