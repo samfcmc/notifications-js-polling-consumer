@@ -1,6 +1,22 @@
 # notifications-js-polling-consumer
 A consumer for the [notifications](https://github.com/samfcmc/bennu-notifications) service that uses polling
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [Requirements](#requirements)
+- [Installation](#installation)
+  - [Use the development version](#use-the-development-version)
+- [Usage](#usage)
+- [Development](#development)
+  - [Requirements](#requirements-1)
+  - [Compile](#compile)
+  - [Compile for production](#compile-for-production)
+  - [Create a new release](#create-a-new-release)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Requirements
 * Bower
 
@@ -9,6 +25,20 @@ If you are using Bower to manage all the frontend dependencies in your project y
 ```shell
 bower install notifications-js-polling-consumer --save
 ```
+
+### Use the development version
+If you want to use the version available in the `master` branch you can use `bower link`.
+* In this project's root:
+```shell
+bower link
+```
+
+* In the project where you are using this lib run the following:
+```shell
+bower link notifications-js-polling-consumer
+```
+
+* That's it, you are using the development version of this library
 
 ## Usage
 * Get a token from the notifications service (TODO)
